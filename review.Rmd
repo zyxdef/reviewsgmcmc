@@ -1,0 +1,88 @@
+---
+title: 'Review for Submission #3274'
+subtitle: |
+  "Review of the Article *`sgmcmc`: An R Package for Stochastic Gradient Markov
+  Chain Monte Carlo*, authored by Baker, Fearnhead, Fox & Nemeth and submitted to
+  the *Journal of Statistical Software*"
+author: "Marcelo Ventura Freire (`mvf@usp.br`)"
+date: "`r Sys.Date()`"
+output: 
+  pdf_document: 
+    number_sections: yes
+    toc: yes
+    toc_depth: 4
+bibliography: "myrefs.bib"
+biblio-style: "jss.bst"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Introduction
+
+As required by the editorial board of this Journal of Statistical Software, I proceeded to reviewing the submission identified above in three fronts: 
+
+- one *article* review on the file `sgmcmc.pdf`; and 
+- two *package* reviews on the contents of the file `sgmcmc_0.2.0.tar.gz`, taking into account the contents of the auxiliary file `reproduction_material.tar.gz`.
+
+All three files above were analysed as provided by the editorial board.
+
+As a disclaimer, I neither assessed the performance of the package nor conducted benchmarking tests with existing alternatives to stochastic gradient MCMC.
+
+The result of the three independent reviews will be presented in what follows.
+
+# Article Review
+
+
+
+# Package Reviews
+
+## Methodological Review
+
+This review intends to assess whether or not the package succeeded implementing the SGMCMC samplers as proposed in the article.
+
+
+
+
+## Mechanics’ Review
+
+### Introduction
+
+This review intends to assess whether or not the package organization is free of flaws, as well as whether or not the package attained a seamless integration with the external software *TensorFlow*.
+
+At the moment I started this review, the *sgmcmc* package was already available online at [CRAN repository](https://cran.r-project.org/web/packages/sgmcmc/index.html) in its version 0.2.0 (the same I received from JSS editors) and its source was accessible in the [project's GitHub repository](https://github.com/STOR-i/sgmcmc).
+
+I conducted this review with the following conditions:
+
+- Hardware setting: 
+    - Dell Inspiron 7520 laptop
+    - Intel Core i7 processor with 8 cores
+    - 8 Gb RAM
+- Software setting:
+    - Lubuntu version 17.10 with kernel version 4.13.0  [**???**]
+    - Python version 3.6.3 [**???**]
+    - TensorFlow version 1.4.0 [**???**]
+- R setting:
+    - R version 3.4.2 [@RLang]
+    - package *tensorflow* version 1.4.1 [**???**]
+    - RStudio IDE version 1.1.391  [**???**]
+
+As a disclaimer, I did not test *sgmcmc* package with in the following particular conditions:
+
+- in Windows or OSX operating systems;
+- with Python 2; and
+- with TensorFlow GPU capabilities.
+
+As an online reference for this review, I considered the [*Review guide for analysis best practice*](https://docs.google.com/document/d/1OYcWJUk-MiM2C1TIHB1Rn6rXoF5fHwRX-7_C12Blx8g) from the [*rOpenSci Analysis Best Practice Guidelines*](https://github.com/ropenscilabs/checkers), developed at [*rOpenSci “Unconference” 2017*](http://unconf17.ropensci.org/).
+
+### Review of the Organizational Aspects of the Package
+
+
+
+
+Review of the Integration with TensorFlow
+
+
+# Bibliography
+<!-- Left blank for BibTeX output following -->
