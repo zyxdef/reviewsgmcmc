@@ -76,12 +76,36 @@ As a disclaimer, I did not test *sgmcmc* package with in the following particula
 
 As an online reference for this review, I considered the [*Review guide for analysis best practice*](https://docs.google.com/document/d/1OYcWJUk-MiM2C1TIHB1Rn6rXoF5fHwRX-7_C12Blx8g) from the [*rOpenSci Analysis Best Practice Guidelines*](https://github.com/ropenscilabs/checkers), developed at [*rOpenSci “Unconference” 2017*](http://unconf17.ropensci.org/).
 
-### Review of the Organizational Aspects of the Package
+### Organizational Aspects of the Package
+
+For starters, I tried to install **sgmcmc** directly from CRAN:
+
+```{r check.install, width=60}
+install.packages(
+  "sgmcmc", 
+  repos = "https://cloud.r-project.org",
+  destdir = "install", 
+  dependencies = T, 
+  verbose = T
+)
+```
+
+As it can be seen, I was able to install **sgmcmc** version 0.2.0 (the same version sent to me by the editors) directly from CRAN in Linux, so the package was able to build successfully.
+
+Also, the file downloaded from CRAN and the file received from the editor are the same, as it should be expected and as it can be seen:
+
+```{r diff, echo=TRUE, message=TRUE, warning=TRUE, error=TRUE}
+system2(
+  "bash", 
+  " -c 'LC_ALL=c diff -s originals/sgmcmc_0.2.0.tar.gz install/sgmcmc_0.2.0.tar.gz'", 
+  stdout = T
+)
+```
 
 
 
 
-Review of the Integration with TensorFlow
+### Review of the Integration with TensorFlow
 
 
 # Bibliography
