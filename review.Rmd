@@ -1,10 +1,10 @@
 ---
 title: 'Review for Submission #3274'
 subtitle: |
-  "Review of the Article *`sgmcmc`: An R Package for Stochastic Gradient Markov
+  Review of the Article *`sgmcmc`: An R Package for Stochastic Gradient Markov
   Chain Monte Carlo*, authored by Baker, Fearnhead, Fox & Nemeth and submitted to
-  the *Journal of Statistical Software*"
-author: "Marcelo Ventura Freire (`mvf@usp.br`)"
+  the *Journal of Statistical Software*
+author: "Marcelo Ventura Freire *(`mvf@usp.br`)*"
 date: "`r Sys.Date()`"
 output: 
   pdf_document: 
@@ -17,6 +17,7 @@ biblio-style: "jss.bst"
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
+knitr::opts_chunk$set(cache = TRUE)
 ```
 
 # Introduction
@@ -34,18 +35,25 @@ The result of the three independent reviews will be presented in what follows.
 
 # Article Review
 
-
-
 # Package Reviews
 
 ## Methodological Review
 
 This review intends to assess whether or not the package succeeded implementing the SGMCMC samplers as proposed in the article.
 
+### Sampler `sgld` -- Stochastic gradient Langevin dynamics
 
+### Sampler `sghmc` -- Stochastic gradient Hamiltonian Monte Carlo
 
+### Sampler `sgnht` -- Stochastic gradient Nosé-Hoover thermostat
 
-## Mechanics’ Review
+### Sampler `sgldcv` -- Stochastic gradient Langevin dynamics with control variates
+
+### Sampler `sghmccv` -- Stochastic gradient Hamiltonian Monte Carlo with control variates
+
+### Sampler `sgnhtcv` -- Stochastic gradient Nosé-Hoover thermostat with control variates
+
+## Package Mechanics Review
 
 ### Introduction
 
@@ -78,6 +86,8 @@ As an online reference for this review, I considered the [*Review guide for anal
 
 ### Organizational Aspects of the Package
 
+#### Instalation
+
 For starters, I tried to install **sgmcmc** directly from CRAN:
 
 ```{r check.install, width=60}
@@ -102,10 +112,26 @@ system2(
 )
 ```
 
+#### Documentation
+
+#### Vignettes, Datasets and Examples
+
+##### `sgmcmc` -- Getting Started
+
+##### `getData()`
+
+##### `gaussMixture` -- Gaussian Mixture
+
+##### `logisticRegression` -- Logistic Regression
+
+##### `mvGauss` -- Multivariate Gaussian
+
+##### `nn` -- Bayesian Neural Network
 
 
+### Integration with the library *TensorFlow*
 
-### Review of the Integration with TensorFlow
+As I previouly installed the package *tensorflow* and ran `tensorflow::install_tensorflow()`,
 
 
 # Bibliography
