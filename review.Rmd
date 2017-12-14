@@ -116,17 +116,17 @@ system2(
 
 #### Vignettes, Datasets and Examples
 
-##### `sgmcmc` -- Getting Started
+##### Vignette `sgmcmc` -- Getting Started
 
-##### `getData()`
+##### Function `getDataset()` and Datasets `covertype` and `mnist`
 
-##### `gaussMixture` -- Gaussian Mixture
+##### Vignette `gaussMixture` -- Gaussian Mixture
 
-##### `logisticRegression` -- Logistic Regression
+##### Vignette `logisticRegression` -- Logistic Regression
 
-##### `mvGauss` -- Multivariate Gaussian
+##### Vignette `mvGauss` -- Multivariate Gaussian
 
-##### `nn` -- Bayesian Neural Network
+##### Vignette `nn` -- Bayesian Neural Network
 
 
 ### Integration with the library *TensorFlow*
