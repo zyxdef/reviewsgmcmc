@@ -114,9 +114,21 @@ system2(
 
 #### Documentation
 
+##### Reference Manual
+
+##### Helpfiles
+
 #### Vignettes, Datasets and Examples
 
 ##### Vignette `sgmcmc` -- Getting Started
+
+This vignette introduces the basics of utilization of the *sgmcmc* package.  Accordingly, it points the reader to articles that are referrences for each one of the three methods implemented (SGLD, SGHMC, and SGNHT), but, unfortunately, the link to the SGLD article was broken and the browser returned a `404 - Not Found` error, as it can be seen in [this figure](#deadlink).  In the same paragraph, there is also a reference to some "recent publication" that links to the [GitHub page of the *sgmcmc* project](https://github.com/jbaker92/stochasticGradientMCMC) instead of an actual publication.
+
+![Dead link](images/error404article.png){#deadlink width=70%}
+
+The orientations about how to specify dataset, parameters, log likelihood, and log prior are are clear and precise, albeit that the user must know how to handle TensorFlow library references, as it can be seen in the log likelihood and log prior presented as examples, which make reference to functions from TensorFlow library (*viz.*, `tf$contrib$distributions$MultivariateNormalDiag()`, `tf$contrib$distributions$StudentT()`, and `tf$reduce_sum()` in this vignette), and the paragraph that makes reference to possible quirks that the user may experience when dealing with the integration between R and TensorFlow.
+
+In this sense, the utilization of TensorFlow is not made transparent by the *sgmcmc* package, but, since this desirable feature was never proposed by the package authors, it is not a problem.
 
 ##### Function `getDataset()` and Datasets `covertype` and `mnist`
 
